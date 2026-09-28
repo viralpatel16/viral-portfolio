@@ -1,0 +1,120 @@
+@import url(
+  "https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+);
+
+:root {
+  font-family: "Inter", sans-serif;
+  color: #f8fafc;
+  background: #101827;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  scroll-behavior: smooth;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+a {
+  color: inherit;
+}
+
+.app {
+  min-height: 100vh;
+  background: #101827;
+}
+
+.foundation-hero {
+  min-height: 570px;
+  padding: 130px 10% 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  background:
+    radial-gradient(
+      ellipse at 85% 30%,
+      rgba(56, 189, 248, 0.13),
+      transparent 42%
+    ),
+    #101827;
+}
+
+.eyebrow {
+  color: #38bdf8;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.foundation-hero h1 {
+  margin: 18px 0;
+  font-size: clamp(2.7rem, 7vw, 5.5rem);
+  line-height: 1.08;
+  letter-spacing: -3px;
+}
+
+.foundation-hero h1 span {
+  color: #38bdf8;
+}
+
+.hero-description {
+  max-width: 600px;
+  color: #aab8ca;
+  font-size: 1.05rem;
+  line-height: 1.8;
+}
+
+.hero-button {
+  display: inline-block;
+  margin-top: 22px;
+  padding: 14px 20px;
+  color: #101827;
+  background: #38bdf8;
+  border-radius: 8px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.hero-button:hover {
+  background: #7dd3fc;
+}
+
+.placeholder-section {
+  padding: 65px 10%;
+  border-top: 1px solid #263449;
+  scroll-margin-top: 20px;
+}
+
+.placeholder-section h2 {
+  font-size: 1.8rem;
+}
+
+.placeholder-section p {
+  color: #aab8ca;
+}
+
+@media (max-width: 600px) {
+  .foundation-hero {
+    min-height: 510px;
+    padding: 90px 7%;
+  }
+
+  .foundation-hero h1 {
+    letter-spacing: -1.8px;
+  }
+
+  .hero-description {
+    font-size: 0.95rem;
+  }
+
+  .placeholder-section {
+    padding: 48px 7%;
+  }
+}
