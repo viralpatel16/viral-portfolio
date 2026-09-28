@@ -1,16 +1,83 @@
-# React + Vite
+# Viral Patel | Personal Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+Welcome to my personal portfolio! I'm **Viral Patel**, a B.Tech Information Technology student at Parul University, interested in **Data Analytics, Machine Learning, and Technology-driven solutions**.
 
-Currently, two official plugins are available:
+This portfolio showcases my skills, projects, education, and learning journey.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+🌐 **Live Portfolio:** Coming Soon
+💼 **LinkedIn:** [Viral Patel](https://www.linkedin.com/in/viral-patel-1032512bb/)
+🐙 **GitHub:** [viralpatel16](https://github.com/viralpatel16)
+📧 **Email:** [viral.k0907@gmail.com](mailto:viral.k0907@gmail.com)
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🚀 About the Portfolio
 
-## Expanding the Oxlint configuration
+This is my personal portfolio website, designed to present my technical skills, academic background, and projects in a clean and interactive way.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+### ✨ Features
+
+* **Home:** Introduction and portfolio landing section.
+* **About:** My background, education, and interests.
+* **Skills:** Technologies and tools I work with.
+* **Projects:** A showcase of my academic and personal projects.
+* **Contact:** Ways to connect with me.
+
+## 🛠️ Tech Stack
+
+* **Frontend:** React.js
+* **Build Tool:** Vite
+* **Languages:** JavaScript, HTML, CSS
+* **Version Control:** Git and GitHub
+
+## 📂 Featured Projects
+
+### 1. EnerSense — IoT Energy Monitoring
+
+An IoT-based energy monitoring and analytics project designed to track electrical parameters and identify potential electrical issues.
+
+**Technologies:** ESP32, IoT, Node.js, Express.js, MongoDB, React
+
+### 2. Movie Data Analysis
+
+A data analytics project focused on exploring movie data, identifying patterns, and presenting insights through visualizations.
+
+**Technologies:** Python, SQL, Excel, Power BI
+
+### 3. PlanYourTrip
+
+A web application project designed to support travel planning using a web-based interface.
+
+**Technologies:** MERN Stack
+
+### 4. Python Quiz Game
+
+A quiz game developed during my four-week online Python internship at UpSkill Campus.
+
+**Technologies:** Python
+
+## 🎓 Education
+
+**B.Tech in Information Technology**
+Parul University
+Expected Graduation: 2027
+
+## 📜 Courses & Certifications
+
+* Machine Learning Using Python — Infosys Springboard
+* Data Analytics Foundations — DeepLearning.AI
+* Chat with Your Data: Generative AI-Powered SQL Data Analysis — Vanderbilt University, Coursera
+* Python Internship — UpSkill Campus
+
+## 🔗 Connect With Me
+
+* **LinkedIn:** [linkedin.com/in/viral-patel-1032512bb](https://www.linkedin.com/in/viral-patel-1032512bb/)
+* **GitHub:** [github.com/viralpatel16](https://github.com/viralpatel16)
+* **LeetCode:** [leetcode.com/u/Viral_Patel9816](https://leetcode.com/u/Viral_Patel9816/)
+* **Kaggle:** [kaggle.com/viralpatel09](https://www.kaggle.com/viralpatel09)
+
+---
+
+⭐ If you find my work interesting, feel free to explore my repositories and connect with me!
+
+**Thanks for visiting!**
