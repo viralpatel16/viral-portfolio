@@ -77,6 +77,17 @@ Expected Graduation: 2027
 * **Kaggle:** [kaggle.com/viralpatel09](https://www.kaggle.com/viralpatel09)
 
 ---
+## 📸 Portfolio Preview
+
+Here’s a preview of my personal portfolio website.
+
+<img width="1723" height="892" alt="image" src="https://github.com/user-attachments/assets/5a0a13fa-3bcb-4636-8742-ffe09c77e132" />
+<img width="1647" height="825" alt="image" src="https://github.com/user-attachments/assets/8ffb0b25-84d5-4505-8571-49a8f95f56d0" />
+<img width="1615" height="845" alt="image" src="https://github.com/user-attachments/assets/adf14948-7788-4cc9-a905-9d0fc5abf36e" />
+<img width="1601" height="916" alt="image" src="https://github.com/user-attachments/assets/0b0d493a-0423-49fe-a66b-9131de134631" />
+<img width="1491" height="831" alt="image" src="https://github.com/user-attachments/assets/1d609b54-8dd8-4e85-ad45-26a4019f3ea0" />
+
+
 
 ⭐ If you find my work interesting, feel free to explore my repositories and connect with me!
 
