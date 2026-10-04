@@ -1,78 +1,105 @@
-
 import "./Contact.css";
 
-const profiles = [
+const socialLinks = [
   {
     name: "GitHub",
-    description: "Explore my code and projects",
+    handle: "@viralpatel16",
     url: "https://github.com/viralpatel16",
-    icon: "GH",
   },
   {
     name: "LinkedIn",
-    description: "Connect with me professionally",
+    handle: "Viral Patel",
     url: "https://www.linkedin.com/in/viral-patel-1032512bb/",
-    icon: "in",
   },
   {
     name: "LeetCode",
-    description: "See my coding practice",
+    handle: "@Viral_Patel9816",
     url: "https://leetcode.com/u/Viral_Patel9816/",
-    icon: "LC",
   },
   {
     name: "Kaggle",
-    description: "Explore my data science profile",
+    handle: "@viralpatel09",
     url: "https://www.kaggle.com/viralpatel09",
-    icon: "KG",
   },
 ];
 
 export default function Contact() {
   return (
     <section id="contact" className="section contact-section">
-      <div className="contact-content">
-        <p className="section-label">LET'S CONNECT</p>
+      <div className="contact-wrapper">
+        <div className="contact-content">
+          <div className="section-label">Let's Connect</div>
 
-        <h2>
-          Have an idea?
-          <br />
-          <span>Let's build something.</span>
-        </h2>
+          <h2 className="section-title">
+            Have an idea?
+            <br />
+            <span>Let's build it.</span>
+          </h2>
 
-        <p className="contact-intro">
-          I'm interested in opportunities to learn, collaborate,
-          and work on meaningful projects in data analytics
-          and technology. Feel free to connect with me.
-        </p>
+          <p className="section-description">
+            I'm always open to interesting projects, internship
+            opportunities, collaborations, and conversations around
+            technology, data, and AI.
+          </p>
 
-        <div className="contact-profiles">
-          {profiles.map((profile) => (
-            <a
-              className="contact-card"
-              href={profile.url}
-              target="_blank"
-              rel="noreferrer"
-              key={profile.name}
-            >
-              <span className="contact-icon">
-                {profile.icon}
-              </span>
-
-              <span className="contact-card-text">
-                <strong>{profile.name}</strong>
-                <small>{profile.description}</small>
-              </span>
-
-              <span className="contact-arrow">↗</span>
-            </a>
-          ))}
+          <a
+            className="contact-email"
+            href="mailto:viral.k0907@gmail.com"
+          >
+            <span>viral.k0907@gmail.com</span>
+            <span aria-hidden="true">↗</span>
+          </a>
         </div>
 
-        <p className="contact-footer">
-          Viral Patel · B.Tech Information Technology · 2027
-        </p>
+        <div className="contact-side">
+          <div className="contact-card glass-card">
+            <span className="contact-card-label">
+              CURRENTLY
+            </span>
+
+            <h3>Open to opportunities</h3>
+
+            <p>
+              Data Analytics · Business Intelligence ·
+              AI · Software Development
+            </p>
+
+            <div className="availability">
+              <span></span>
+              Available for collaboration
+            </div>
+          </div>
+
+          <div className="social-grid">
+            {socialLinks.map((social) => (
+              <a
+                key={social.name}
+                href={social.url}
+                target="_blank"
+                rel="noreferrer"
+                className="social-card glass-card"
+              >
+                <div>
+                  <strong>{social.name}</strong>
+                  <span>{social.handle}</span>
+                </div>
+
+                <span
+                  className="social-arrow"
+                  aria-hidden="true"
+                >
+                  ↗
+                </span>
+              </a>
+            ))}
+          </div>
+        </div>
       </div>
+
+      <footer className="portfolio-footer">
+        <span>© {new Date().getFullYear()} Viral Patel</span>
+        <span>Built with React · Vite</span>
+      </footer>
     </section>
   );
 }

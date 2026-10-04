@@ -1,74 +1,112 @@
-import "./Sections.css";
 export default function About() {
   return (
-    <section id="about" className="section">
-      <div className="section-heading">
-        <p className="section-label">GET TO KNOW ME</p>
-        <h2>About <span>Me</span></h2>
-        <p className="section-intro">
-          A little about my journey, interests, and what I'm building.
+    <section id="about" className="section about-section">
+      <div className="section-header">
+        <div className="section-label">About Me</div>
+
+        <h2 className="section-title">
+          Curious about data.
+          <br />
+          <span>Focused on impact.</span>
+        </h2>
+
+        <p className="section-description">
+          I'm Viral Patel, a B.Tech Information Technology student at
+          Parul University, graduating in 2027. I enjoy turning data,
+          technology, and ideas into practical digital solutions.
         </p>
       </div>
 
       <div className="about-grid">
-        <div className="about-main">
-          <h3>Turning curiosity into practical solutions.</h3>
+        <article className="about-card glass-card">
+          <h3>Who I am</h3>
 
           <p>
-            I'm Viral Patel, a B.Tech Information Technology student
-            with a strong interest in Data Analytics, Business
-            Intelligence, and emerging technologies.
+            My primary interests are Data Analytics, Business
+            Intelligence, Artificial Intelligence, and software
+            development.
           </p>
 
           <p>
-            I enjoy working with data, discovering meaningful
-            patterns, and presenting insights in a clear and
-            understandable way. I also like building practical
-            technology projects that solve real-world problems.
+            I enjoy working with data to discover patterns, create
+            visualizations, and communicate insights that can support
+            better decisions.
           </p>
 
           <p>
-            Through academic and personal projects, I've explored
-            data analysis, dashboard development, Python programming,
-            and full-stack application development. I'm continuously
-            learning and improving my technical and problem-solving
-            skills.
+            Alongside analytics, I explore full-stack development and
+            AI-powered applications, which helps me understand both the
+            data and the technology behind modern products.
           </p>
+        </article>
+
+        <div className="about-stats">
+          <article className="stat-card glass-card">
+            <span className="stat-number">2027</span>
+            <span className="stat-label">
+              Expected B.Tech IT Graduation
+            </span>
+          </article>
+
+          <article className="stat-card glass-card">
+            <span className="stat-number">5+</span>
+            <span className="stat-label">
+              Projects & Practical Builds
+            </span>
+          </article>
+
+          <article className="stat-card glass-card">
+            <span className="stat-number">AI</span>
+            <span className="stat-label">
+              Exploring intelligent applications
+            </span>
+          </article>
+
+          <article className="stat-card glass-card">
+            <span className="stat-number">∞</span>
+            <span className="stat-label">
+              Learning, experimenting & improving
+            </span>
+          </article>
         </div>
+      </div>
 
-        <div className="about-details">
-          <div className="detail-card">
-            <span className="detail-icon">🎓</span>
-            <div>
-              <h4>Education</h4>
-              <p>B.Tech in Information Technology</p>
-            </div>
-          </div>
+      <div className="certifications-grid">
+        <article className="certification-card glass-card">
+          <span className="certification-badge">
+            Certification
+          </span>
 
-          <div className="detail-card">
-            <span className="detail-icon">📊</span>
-            <div>
-              <h4>Primary Interest</h4>
-              <p>Data Analytics & Business Intelligence</p>
-            </div>
-          </div>
+          <h3>Machine Learning Using Python</h3>
 
-          <div className="detail-card">
-            <span className="detail-icon">💡</span>
-            <div>
-              <h4>What I Enjoy</h4>
-              <p>Analyzing data and building useful solutions</p>
-            </div>
-          </div>
+          <p>
+            Infosys Springboard
+          </p>
+        </article>
 
-          <div className="detail-card">
-            <span className="detail-icon">🚀</span>
-            <div>
-              <h4>Currently Exploring</h4>
-              <p>Data Science, AI & Machine Learning</p>
-            </div>
-          </div>
-        </div>
+        <article className="certification-card glass-card">
+          <span className="certification-badge">
+            Certification
+          </span>
+
+          <h3>Data Analytics Foundations</h3>
+
+          <p>
+            DeepLearning.AI
+          </p>
+        </article>
+
+        <article className="certification-card glass-card">
+          <span className="certification-badge">
+            Certification
+          </span>
+
+          <h3>Chat with Your Data: Generative AI-Powered SQL Data Analysis</h3>
+
+          <p>
+            Vanderbilt University · Coursera
+          </p>
+        </article>
       </div>
     </section>
   );

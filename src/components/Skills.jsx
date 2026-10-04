@@ -1,40 +1,81 @@
-import "./Sections.css";
 const skillGroups = [
   {
-    title: "Programming",
-    description: "Languages I use to write code and solve problems.",
-    skills: ["Python", "SQL", "C", "C++", "Java"],
-  },
-  {
+    icon: "▦",
     title: "Data Analytics",
-    description: "Tools for exploring, analyzing, and presenting data.",
+    description:
+      "Working with data to discover patterns, generate insights, and support better decisions.",
     skills: [
-      "Microsoft Excel",
+      "Python",
+      "SQL",
+      "Excel",
       "Power BI",
       "Statistics",
-      "Data Visualization",
-      "Exploratory Data Analysis",
     ],
   },
   {
-    title: "Databases & Development",
-    description: "Technologies I've explored through practical projects.",
+    icon: "⌘",
+    title: "Development",
+    description:
+      "Building practical web applications and backend systems with modern development technologies.",
+    skills: [
+      "Java",
+      "C",
+      "C++",
+      "React",
+      "Node.js",
+      "MERN",
+    ],
+  },
+  {
+    icon: "✦",
+    title: "AI & Machine Learning",
+    description:
+      "Exploring machine learning and AI-powered applications to solve real-world problems.",
+    skills: [
+      "Machine Learning",
+      "Python",
+      "AI",
+      "FastAPI",
+      "Data Processing",
+    ],
+  },
+  {
+    icon: "◈",
+    title: "Data & Databases",
+    description:
+      "Working with databases and data tools to store, query, transform, and analyze information.",
     skills: [
       "MongoDB",
       "MySQL",
-      "Node.js",
-      "Express.js",
-      "React",
+      "SQL",
+      "NoSQL",
+      "Data Analysis",
     ],
   },
   {
-    title: "Core Concepts",
-    description: "Foundational knowledge I'm building and applying.",
+    icon: "⌁",
+    title: "Visualization",
+    description:
+      "Transforming complex datasets into clear and understandable visual stories.",
     skills: [
-      "Data Cleaning",
-      "Problem Solving",
-      "Machine Learning Basics",
-      "Dashboard Development",
+      "Power BI",
+      "Excel",
+      "Charts",
+      "Dashboards",
+      "Data Storytelling",
+    ],
+  },
+  {
+    icon: "⚡",
+    title: "Tools & Workflow",
+    description:
+      "Using modern development and productivity tools to build, test, and manage projects.",
+    skills: [
+      "Git",
+      "GitHub",
+      "VS Code",
+      "Vite",
+      "REST APIs",
     ],
   },
 ];
@@ -42,26 +83,34 @@ const skillGroups = [
 export default function Skills() {
   return (
     <section id="skills" className="section skills-section">
-      <div className="section-heading">
-        <p className="section-label">MY TOOLKIT</p>
-        <h2>Skills & <span>Technologies</span></h2>
-        <p className="section-intro">
-          The tools and concepts I use to learn, analyze,
-          and build practical solutions.
+      <div className="section-header">
+        <div className="section-label">Skills & Technologies</div>
+
+        <h2 className="section-title">
+          Tools I use to
+          <br />
+          <span>build and analyze.</span>
+        </h2>
+
+        <p className="section-description">
+          A combination of analytical thinking, programming,
+          visualization, and modern development technologies that I
+          use to turn ideas into practical solutions.
         </p>
       </div>
 
       <div className="skills-grid">
-        {skillGroups.map((group, index) => (
-          <article className="skill-card" key={group.title}>
-            <div className="skill-card-top">
-              <span className="skill-number">
-                0{index + 1}
-              </span>
-              <span className="skill-arrow">↗</span>
+        {skillGroups.map((group) => (
+          <article
+            className="skill-card glass-card"
+            key={group.title}
+          >
+            <div className="skill-icon" aria-hidden="true">
+              {group.icon}
             </div>
 
             <h3>{group.title}</h3>
+
             <p>{group.description}</p>
 
             <div className="skill-tags">

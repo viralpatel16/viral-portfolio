@@ -1,111 +1,339 @@
+/* =========================
+   CONTACT SECTION
+========================= */
 
 .contact-section {
-  background: #111c2e;
+  padding-bottom: 45px;
 }
+
+.contact-wrapper {
+  display: grid;
+  grid-template-columns: 1.05fr 0.95fr;
+  gap: 60px;
+  align-items: center;
+}
+
+
+/* =========================
+   CONTACT CONTENT
+========================= */
 
 .contact-content {
-  max-width: 850px;
-  margin: 0 auto;
+  max-width: 680px;
 }
 
-.contact-content h2 {
-  margin: 16px 0;
-  color: #f8fafc;
-  font-size: clamp(2.3rem, 5vw, 4rem);
-  line-height: 1.15;
-  letter-spacing: -2px;
+.contact-content .section-description {
+  max-width: 620px;
+  margin-bottom: 35px;
 }
 
-.contact-content h2 span {
-  color: #38bdf8;
+
+/* =========================
+   EMAIL BUTTON
+========================= */
+
+.contact-email {
+  display: inline-flex;
+  align-items: center;
+  gap: 14px;
+
+  padding: 14px 18px;
+
+  border: 1px solid rgba(56, 189, 248, 0.2);
+  border-radius: 12px;
+
+  color: var(--cyan);
+
+  background: rgba(56, 189, 248, 0.05);
+
+  font-size: 0.92rem;
+  font-weight: 700;
+
+  text-decoration: none;
+
+  transition:
+    transform 0.25s ease,
+    background 0.25s ease,
+    border-color 0.25s ease;
 }
 
-.contact-intro {
-  max-width: 650px;
-  margin: 22px 0 35px;
-  color: #aab8ca;
-  font-size: 1rem;
-  line-height: 1.9;
+.contact-email:hover {
+  transform: translateY(-3px);
+
+  background: rgba(56, 189, 248, 0.09);
+
+  border-color: rgba(56, 189, 248, 0.4);
 }
 
-.contact-profiles {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 15px;
+.contact-email span:last-child {
+  transition: transform 0.25s ease;
 }
+
+.contact-email:hover span:last-child {
+  transform: translate(3px, -3px);
+}
+
+
+/* =========================
+   CONTACT SIDE
+========================= */
+
+.contact-side {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+
+/* =========================
+   CONTACT CARD
+========================= */
 
 .contact-card {
+  position: relative;
+
+  padding: 30px;
+
+  overflow: hidden;
+}
+
+.contact-card::before {
+  content: "";
+
+  position: absolute;
+
+  width: 160px;
+  height: 160px;
+
+  top: -80px;
+  right: -60px;
+
+  border-radius: 50%;
+
+  background: var(--cyan);
+
+  filter: blur(65px);
+  opacity: 0.1;
+}
+
+.contact-card-label {
+  position: relative;
+  z-index: 1;
+
+  display: block;
+
+  margin-bottom: 12px;
+
+  color: var(--cyan);
+
+  font-size: 0.68rem;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+}
+
+.contact-card h3 {
+  position: relative;
+  z-index: 1;
+
+  margin: 0 0 10px;
+
+  color: var(--text);
+
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 1.4rem;
+}
+
+.contact-card p {
+  position: relative;
+  z-index: 1;
+
+  margin: 0;
+
+  color: var(--muted);
+
+  font-size: 0.88rem;
+  line-height: 1.7;
+}
+
+
+/* =========================
+   AVAILABILITY
+========================= */
+
+.availability {
+  position: relative;
+  z-index: 1;
+
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+
+  margin-top: 22px;
+
+  color: #b8c8da;
+
+  font-size: 0.76rem;
+}
+
+.availability span {
+  width: 8px;
+  height: 8px;
+
+  border-radius: 50%;
+
+  background: var(--green);
+
+  box-shadow:
+    0 0 0 5px rgba(52, 211, 153, 0.08);
+
+  animation: availability-pulse 2s ease-in-out infinite;
+}
+
+@keyframes availability-pulse {
+  0%,
+  100% {
+    box-shadow:
+      0 0 0 4px rgba(52, 211, 153, 0.06);
+  }
+
+  50% {
+    box-shadow:
+      0 0 0 8px rgba(52, 211, 153, 0.02);
+  }
+}
+
+
+/* =========================
+   SOCIAL GRID
+========================= */
+
+.social-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 14px;
+}
+
+.social-card {
+  min-height: 95px;
+
   display: flex;
   align-items: center;
-  gap: 15px;
-  padding: 19px;
-  background: #1e293b;
-  border: 1px solid #334155;
-  border-radius: 12px;
+  justify-content: space-between;
+
+  padding: 20px;
+
   text-decoration: none;
-  transition:
-    transform 0.2s ease,
-    border-color 0.2s ease;
 }
 
-.contact-card:hover {
-  transform: translateY(-3px);
-  border-color: #38bdf8;
-}
-
-.contact-icon {
-  display: grid;
-  place-items: center;
-  flex-shrink: 0;
-  width: 45px;
-  height: 45px;
-  color: #38bdf8;
-  background: #101827;
-  border: 1px solid #334155;
-  border-radius: 10px;
-  font-weight: 800;
-}
-
-.contact-card-text {
+.social-card > div {
   display: flex;
-  flex: 1;
   flex-direction: column;
   gap: 5px;
 }
 
-.contact-card-text strong {
-  color: #f8fafc;
-  font-size: 0.98rem;
+.social-card strong {
+  color: var(--text);
+
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 0.95rem;
 }
 
-.contact-card-text small {
-  color: #aab8ca;
-  font-size: 0.8rem;
+.social-card span {
+  color: var(--muted);
+
+  font-size: 0.72rem;
 }
 
-.contact-arrow {
-  color: #38bdf8;
-  font-size: 1.15rem;
+.social-arrow {
+  color: var(--cyan) !important;
+
+  font-size: 1rem !important;
+
+  transition:
+    transform 0.25s ease;
 }
 
-.contact-footer {
-  margin-top: 55px;
-  padding-top: 22px;
-  border-top: 1px solid #334155;
-  color: #94a3b8;
-  font-size: 0.85rem;
+.social-card:hover .social-arrow {
+  transform: translate(3px, -3px);
 }
 
-@media (max-width: 560px) {
-  .contact-profiles {
+
+/* =========================
+   FOOTER
+========================= */
+
+.portfolio-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  margin-top: 100px;
+  padding-top: 24px;
+
+  border-top: 1px solid var(--border);
+
+  color: #71819a;
+
+  font-size: 0.72rem;
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 900px) {
+  .contact-wrapper {
     grid-template-columns: 1fr;
+    gap: 40px;
   }
 
-  .contact-content h2 {
-    letter-spacing: -1px;
+  .contact-content {
+    max-width: 100%;
+  }
+}
+
+
+@media (max-width: 600px) {
+  .contact-section {
+    padding-bottom: 30px;
   }
 
   .contact-card {
-    padding: 16px;
+    padding: 25px;
+  }
+
+  .social-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .portfolio-footer {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+
+    margin-top: 70px;
+  }
+
+  .contact-email {
+    width: 100%;
+    justify-content: space-between;
+  }
+}
+
+
+/* =========================
+   REDUCED MOTION
+========================= */
+
+@media (prefers-reduced-motion: reduce) {
+  .contact-email,
+  .contact-email span:last-child,
+  .social-arrow {
+    transition: none;
+  }
+
+  .availability span {
+    animation: none;
   }
 }

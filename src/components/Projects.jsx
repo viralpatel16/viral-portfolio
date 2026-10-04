@@ -1,44 +1,54 @@
-
 import "./Projects.css";
 
 const projects = [
   {
     number: "01",
-    title: "EnerSense",
-    category: "IoT · MERN · Analytics",
+    title: "StudyMate AI",
+    status: "Hackathon Project",
     description:
-      "An IoT-based electrical monitoring system that tracks voltage, current, power and energy in real time. Includes fault detection, alerts and an analytics dashboard.",
-    tags: ["ESP32", "Node.js", "MongoDB", "IoT"],
+      "An AI-powered study assistant designed to make learning smarter through AI summaries, smart quizzes, flashcards, and study-material uploads.",
+    tech: ["React", "Vite", "FastAPI", "AI", "Python"],
+    link: "https://studymate-ai-4uu1.onrender.com/",
+    linkText: "Live Project",
+    featured: true,
+  },
+  {
+    number: "02",
+    title: "EnerSense",
+    status: "IoT + Analytics",
+    description:
+      "An IoT-based electrical energy monitoring and diagnostic platform that tracks voltage, current, power, and energy while detecting abnormal conditions.",
+    tech: ["ESP32", "IoT", "MERN", "MongoDB", "Analytics"],
     link: "https://enersense.in",
     linkText: "Visit Website",
   },
   {
-    number: "02",
-    title: "Movie Data Analysis",
-    category: "Data Analytics · BI",
-    description:
-      "A movie data analytics project using Python, SQL and Power BI to explore datasets, identify patterns and communicate insights through visualizations.",
-    tags: ["Python", "SQL", "Power BI", "Excel"],
-    link: "",
-    linkText: "Project Details",
-  },
-  {
     number: "03",
-    title: "PlanYourTrip",
-    category: "Full-Stack Development",
+    title: "Movie Data Analysis",
+    status: "Data Analytics",
     description:
-      "A MERN-based travel planning project developed to practice full-stack web development and create an organized travel planning experience.",
-    tags: ["MongoDB", "Express", "React", "Node.js"],
-    link: "",
-    linkText: "Project Details",
+      "A data analytics project focused on exploring movie datasets, identifying trends, and creating meaningful insights using Python, SQL, Excel, and Power BI.",
+    tech: ["Python", "SQL", "Excel", "Power BI"],
+    link: "https://github.com/viralpatel16",
+    linkText: "GitHub Profile",
   },
   {
     number: "04",
-    title: "Python Quiz Game",
-    category: "Python · Internship",
+    title: "PlanYourTrip",
+    status: "Full Stack",
     description:
-      "An interactive quiz game developed during a four-week Python internship, applying programming fundamentals and logical problem-solving.",
-    tags: ["Python", "Logic", "Quiz Application"],
+      "A MERN-based travel planning platform designed to help users organize destinations and create a more convenient travel experience.",
+    tech: ["MongoDB", "Express", "React", "Node.js"],
+    link: "https://github.com/viralpatel16",
+    linkText: "GitHub Profile",
+  },
+  {
+    number: "05",
+    title: "Python Quiz Game",
+    status: "Python Project",
+    description:
+      "An interactive Python quiz game developed during my internship at UpSkill Campus, featuring question-based gameplay and score tracking.",
+    tech: ["Python", "Logic", "CLI", "Game Development"],
     link: "https://github.com/viralpatel16/Upskillcampus",
     linkText: "View on GitHub",
   },
@@ -47,56 +57,62 @@ const projects = [
 export default function Projects() {
   return (
     <section id="projects" className="section projects-section">
-      <div className="section-heading">
-        <p className="section-label">MY WORK</p>
-        <h2>Featured <span>Projects</span></h2>
-        <p className="section-intro">
-          A selection of projects where I apply my
-          technical skills to practical problems.
+      <div className="section-header">
+        <div className="section-label">Selected Work</div>
+
+        <h2 className="section-title">
+          Projects that turn
+          <br />
+          <span>ideas into solutions.</span>
+        </h2>
+
+        <p className="section-description">
+          A selection of projects where I combine development, data,
+          analytics, AI, and problem-solving to build practical solutions.
         </p>
       </div>
 
       <div className="projects-grid">
         {projects.map((project) => (
-          <article className="project-card" key={project.number}>
+          <article
+            className={`project-card glass-card ${
+              project.featured ? "featured" : ""
+            }`}
+            key={project.number}
+          >
             <div className="project-top">
               <span className="project-number">
                 {project.number}
               </span>
-              <span className="project-mark">↗</span>
+
+              <span className="project-status">
+                {project.status}
+              </span>
             </div>
 
-            <p className="project-category">
-              {project.category}
-            </p>
-
             <h3>{project.title}</h3>
-            <p className="project-description">
-              {project.description}
-            </p>
 
-            <div className="project-tags">
-              {project.tags.map((tag) => (
-                <span className="skill-tag" key={tag}>
-                  {tag}
+            <p>{project.description}</p>
+
+            <div className="project-tech">
+              {project.tech.map((technology) => (
+                <span key={technology}>
+                  {technology}
                 </span>
               ))}
             </div>
 
-            {project.link ? (
+            <div className="project-footer">
               <a
                 className="project-link"
                 href={project.link}
                 target="_blank"
                 rel="noreferrer"
               >
-                {project.linkText} ↗
+                {project.linkText}
+                <span aria-hidden="true">↗</span>
               </a>
-            ) : (
-              <span className="project-link project-link-disabled">
-                Details coming soon
-              </span>
-            )}
+            </div>
           </article>
         ))}
       </div>
